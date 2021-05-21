@@ -1,0 +1,9 @@
+spring:
+  liquibase:
+    change-log: classpath*:migrations/changelog.yaml
+    user: postgres
+    url: jdbc:postgresql://localhost:5432/port
+  datasource:
+    url: jdbc:postgresql://localhost:5432/port
+    username: postgres
+    password: 1111

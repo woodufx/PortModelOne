@@ -1,0 +1,12 @@
+databaseChangeLog:
+  - preConditions:
+      - dbms:
+          type: postgresql
+  - changeSet:
+      id: port-1-300421-1039
+      author: dmitry
+      comment: Create initial information
+      changes:
+        - sqlFile:
+            path: port-1-300421-1039.sql
+            relativeToChangelogFile: true
